@@ -1,0 +1,145 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap");
+:root {
+  font: normal 400 18px/22px "Roboto", sans-serif;
+}
+
+.skill-box {
+  border: 1px solid #C4C4C4;
+  border-radius: 5.6px;
+}
+
+.section-header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 0 16px;
+  margin: 32px 0;
+}
+.section-header__header {
+  font-weight: 500;
+  font-size: 32px;
+  line-height: 37px;
+  color: #444444;
+  margin: 0 8px;
+}
+.section-header__line {
+  width: 80px;
+  background: #444444;
+  height: 2px;
+}
+
+.btn {
+  padding: 12px 18px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #009688;
+  border-radius: 5.6px;
+  cursor: pointer;
+  outline: none;
+  border: none;
+  font-weight: 500;
+  font-size: 25px;
+  line-height: 29px;
+  color: #FFFFFF;
+}
+
+.link {
+  font-size: 16px;
+  line-height: 19px;
+  color: #009688;
+  text-decoration: none;
+  margin: 0 8px;
+}
+.link__icon {
+  margin-right: 10px;
+}
+
+.skill-work {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0;
+  margin: 40px 0;
+}
+.skill-work__header {
+  display: flex;
+  align-items: flex-start;
+  width: 100%;
+  padding: 0;
+  margin: 16px 0;
+}
+.skill-work__label {
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 28px;
+  color: #009688;
+  margin: 0 0;
+}
+.skill-work__progress {
+  display: flex;
+  align-items: center;
+  height: 28px;
+  background: linear-gradient(90deg, #009688 0%, rgba(0, 150, 136, 0) 40.34%);
+  flex-grow: 1;
+  margin: 0 32px;
+}
+.skill-work__description {
+  font-size: 18px;
+  line-height: 21px;
+  color: #444444;
+  order: 1;
+  margin: 16px 0;
+}
+
+.skill-box {
+  width: 358px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 8px;
+  box-sizing: border-box;
+  border-radius: 6px;
+  margin: 0 32px;
+}
+.skill-box__img {
+  margin-bottom: 8px;
+}
+.skill-box__img img {
+  width: 100%;
+  height: auto;
+}
+.skill-box__title {
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 28px;
+  color: #444444;
+  margin: 0 0 8px 0;
+}
+.skill-box__description {
+  display: flex;
+  font-size: 18px;
+  line-height: 21px;
+  color: 4px;
+  margin: 0 0 8px 0;
+}
+.skill-box__footer {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 4px 0;
+  margin: 0 0;
+}
+.skill-box__link {
+  font-size: 16px;
+  line-height: 19px;
+  color: #009688;
+  text-decoration: none;
+  margin: 0 16px 0 0;
+}
+.skill-box__icon {
+  margin-right: 10.4px;
+}
+
+/*# sourceMappingURL=ui-components.css.map */

@@ -1,0 +1,644 @@
+@import "ui-components";
+
+%border {
+  border: 1px solid $color-bord;
+  border-radius: 1.4*$size;
+}
+
+@media (min-width: 980px) and (max-width: 1169px) {
+  .container {
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  .general-header {
+    background: $dark;
+    margin: 0 0 14*$size 0;
+  }
+
+  .wrapper-head {
+    display: flex;
+    flex-direction: column;
+    padding: 2*$size 4*$size;
+
+    &__menu {
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+      order: 1;
+    }
+
+    &__link {
+      font-weight: 500;
+      font-size: 8*$size;
+      line-height: 37px;
+      color: $white;
+      margin: 0 8*$size;
+      text-decoration: none;
+      display: none;
+    }
+
+    &__link:hover {
+      color: $green;
+    }
+
+    &__label {
+      width: 100%;
+      display: flex;
+      justify-content: flex-end;
+      color: $white;
+    }
+
+    &__pic-menu {
+      display: none;
+      order: 1;
+    }
+
+    &__pic-label {
+      margin: 14px 0 22px 0;
+      width: 18px;
+      height: 12px;
+      order: 1;
+    }
+
+    &__pic-label:checked {
+      color: red;
+    }
+
+    &__pic-menu:checked {
+      color: red;
+    }
+  }
+
+  //----------------------------------------------------------
+
+  .about {
+    display: flex;
+    align-items: center;
+    margin: 0 0 14*$size 0;
+
+
+    &__img {
+      padding: 0 12*$size;
+    }
+
+    &__main-info {
+      margin: 0 0 0 0;
+    }
+
+    &__title {
+      width: 100%;
+    }
+
+  }
+
+  //-------------------------------------------
+
+  .skill-work__header {
+    display: flex;
+  }
+
+  //------------------------------------
+
+  .wrapper_works {
+    margin: 0 0 8*$size 0;
+  }
+  //------------------------------------
+
+  .skills {
+    justify-content: center;
+  }
+
+  //----------------------------------------
+
+  .wrapper-contacts {
+    padding: 0 16px;
+  }
+
+  .form-contacts {
+    width: 50%;
+
+    &__inputs {
+    }
+
+    &__name {
+      width: 50%;
+    }
+
+    &__email {
+      width: 100%;
+    }
+
+  }
+
+  .data-contacts {
+    width: 50%;
+  }
+
+}
+
+@media (max-width: 979px) {
+  .container {
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  .general-header {
+    background: $dark;
+    margin: 0 0 14*$size 0;
+  }
+
+  .wrapper-head {
+    display: flex;
+    flex-direction: column;
+    padding: 2*$size 4*$size;
+
+    &__menu {
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+      order: 1;
+    }
+
+    &__link {
+      font-weight: 500;
+      font-size: 8*$size;
+      line-height: 37px;
+      color: $white;
+      margin: 0 8*$size;
+      text-decoration: none;
+      display: none;
+    }
+
+    &__link:hover {
+      color: $green;
+    }
+
+    &__label {
+      width: 100%;
+      display: flex;
+      justify-content: flex-end;
+      color: $white;
+    }
+
+    &__pic-menu {
+      display: none;
+      order: 1;
+    }
+
+    &__pic-label {
+      margin: 14px 0 22px 0;
+      width: 18px;
+      height: 12px;
+      order: 1;
+    }
+
+    &__pic-label:checked {
+      color: red;
+    }
+
+    &__pic-menu:checked {
+      color: red;
+    }
+  }
+
+  //----------------------------------------------------------
+
+  .about {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    //padding: 0 4*$size;
+    margin: 0 0 14*$size 0;
+
+
+    &__img {
+      width: 260px;
+      height: auto;
+      margin: 0 0 14*$size 0;
+      padding: 0 12*$size;
+    }
+
+    &__main-info {
+      margin: 0 0 0 0;
+    }
+
+    &__title {
+      width: 100%;
+      text-align: center;
+    }
+
+  }
+
+  //-------------------------------------------
+
+  .skill-work__header {
+    display: flex;
+    flex-direction: column;
+  }
+  .skill-work__progress {
+    height: 4px;
+    width: 100%;
+    margin: 8px 0 0 0;
+  }
+
+  .wrapper-skills {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0 4*$size;
+    margin: 14*$size 0;
+  }
+
+  //------------------------------------
+
+  .wrapper_works {
+    margin: 0 0 8*$size 0;
+  }
+  //------------------------------------
+
+  .skills {
+    justify-content: center;
+  }
+
+  //----------------------------------------
+
+  .wrapper-contacts {
+    flex-wrap: wrap;
+    padding: 0 16px;
+  }
+
+  .form-contacts {
+    width: 100%;
+
+    &__inputs {
+      width: 100%;
+      flex-wrap: wrap;
+    }
+
+    &__name {
+      width: 100%;
+    }
+
+    &__email {
+      width: 100%;
+    }
+
+  }
+
+  .data-contacts {
+    width: 100%;
+  }
+
+  .general-footer {
+    background: $dark;
+  }
+}
+
+@media (max-width: 767px) {
+  .container {
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  .general-header {
+    background: $dark;
+    margin: 0 0 14*$size 0;
+  }
+
+  .wrapper-head {
+    display: flex;
+    flex-direction: column;
+    padding: 2*$size 4*$size;
+
+    &__menu {
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+      order: 1;
+    }
+
+    &__link {
+      font-weight: 500;
+      font-size: 8*$size;
+      line-height: 37px;
+      color: $white;
+      margin: 0 8*$size;
+      text-decoration: none;
+      display: none;
+    }
+
+    &__link:hover {
+      color: $green;
+    }
+
+    &__label {
+      width: 100%;
+      display: flex;
+      justify-content: flex-end;
+      color: $white;
+    }
+
+    &__pic-menu {
+      display: none;
+      order: 1;
+    }
+
+    &__pic-label {
+      margin: 14px 0 22px 0;
+      width: 18px;
+      height: 12px;
+      order: 1;
+    }
+
+    &__pic-label:checked {
+      color: red;
+    }
+
+    &__pic-menu:checked {
+      color: red;
+    }
+  }
+
+  //----------------------------------------------------------
+
+  .about {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    //padding: 0 4*$size;
+    margin: 0 0 14*$size 0;
+
+
+    &__img {
+      width: 260px;
+      height: auto;
+      margin: 0 0 14*$size 0;
+      padding: 0 12*$size;
+    }
+
+    &__main-info {
+      margin: 0 0 0 0;
+    }
+
+    &__title {
+      width: 100%;
+      text-align: center;
+    }
+
+  }
+
+  //-------------------------------------------
+
+  .skill-work__header {
+    display: flex;
+    flex-direction: column;
+  }
+  .skill-work__progress {
+    height: 4px;
+    width: 100%;
+    margin: 8px 0 0 0;
+  }
+
+  .work-section {
+    background: none;
+  }
+
+  .wrapper-skills {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0 4*$size;
+    margin: 14*$size 0;
+  }
+
+  //------------------------------------
+
+  .wrapper_works {
+    margin: 0 0 8*$size 0;
+  }
+  //------------------------------------
+
+  .skill-box {
+    width: 100%;
+
+    &__img {
+      width: 100%;
+    }
+
+    &__title {
+      width: 100%;
+    }
+
+    &__description {
+      width: 100%;
+    }
+  }
+  //----------------------------------------
+
+  .wrapper-contacts {
+    flex-wrap: wrap;
+    padding: 0 16px;
+  }
+
+  .form-contacts {
+    width: 100%;
+
+    &__inputs {
+      width: 100%;
+      flex-wrap: wrap;
+    }
+
+    &__name {
+      width: 100%;
+    }
+
+    &__email {
+      width: 100%;
+    }
+
+  }
+
+  .data-contacts {
+    width: 100%;
+  }
+
+  .general-footer {
+    background: $dark;
+  }
+}
+
+@media (max-width: 480px) {
+  .container {
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  .general-header {
+    background: $dark;
+    margin: 0 0 14*$size 0;
+  }
+
+  .wrapper-head {
+    display: flex;
+    flex-direction: column;
+    padding: 2*$size 4*$size;
+
+    &__menu {
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+      order: 1;
+    }
+
+    &__link {
+      font-weight: 500;
+      font-size: 8*$size;
+      line-height: 37px;
+      color: $white;
+      margin: 0 8*$size;
+      text-decoration: none;
+      display: none;
+    }
+
+    &__link:hover {
+      color: $green;
+    }
+
+    &__label {
+      width: 100%;
+      display: flex;
+      justify-content: flex-end;
+      color: $white;
+    }
+
+    &__pic-menu {
+      display: none;
+      order: 1;
+    }
+
+    &__pic-label {
+      margin: 14px 0 22px 0;
+      width: 18px;
+      height: 12px;
+      order: 1;
+    }
+
+    &__pic-label:checked {
+      color: red;
+    }
+
+    &__pic-menu:checked {
+      color: red;
+    }
+  }
+
+  //----------------------------------------------------------
+
+  .about {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    //padding: 0 4*$size;
+    margin: 0 0 14*$size 0;
+
+
+    &__img {
+      width: 260px;
+      height: auto;
+      margin: 0 0 14*$size 0;
+      padding: 0 12*$size;
+    }
+
+    &__main-info {
+      margin: 0 0 0 0;
+    }
+
+    &__title {
+      width: 100%;
+      text-align: center;
+    }
+
+  }
+
+  //-------------------------------------------
+
+  .skill-work__header {
+    display: flex;
+    flex-direction: column;
+  }
+  .skill-work__progress {
+    height: 4px;
+    width: 100%;
+    margin: 8px 0 0 0;
+  }
+
+  .work-section {
+    background: none;
+  }
+
+  .wrapper-skills {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0 4*$size;
+    margin: 14*$size 0;
+  }
+
+  //------------------------------------
+
+  .wrapper_works {
+    margin: 0 0 8*$size 0;
+  }
+  //------------------------------------
+
+  .skill-box {
+    width: 100%;
+
+    &__img {
+      width: 100%;
+    }
+
+    &__title {
+      width: 100%;
+    }
+
+    &__description {
+      width: 100%;
+    }
+  }
+//----------------------------------------
+
+  .wrapper-contacts {
+    flex-wrap: wrap;
+    padding: 0 16px;
+  }
+
+  .form-contacts {
+    width: 100%;
+
+    &__inputs {
+      flex-wrap: wrap;
+    }
+
+    &__name {
+      width: 100%;
+    }
+
+    &__email {
+      width: 100%;
+    }
+
+  }
+
+  .data-contacts {
+    width: 100%;
+  }
+
+  .general-footer {
+    background: $dark;
+  }
+}
