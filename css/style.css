@@ -295,6 +295,11 @@
   margin-right: 32px;
   margin-bottom: 32px;
 }
+.form-contacts__name:focus, .form-contacts__email:focus, .form-contacts__textarea:focus {
+  border: 1px solid #009688;
+  border-radius: 4.8px;
+  outline: none;
+}
 .form-contacts__email {
   margin-right: 0;
 }

@@ -32,6 +32,12 @@
     @extend %border;
   }
 
+  &__name:focus, &__email:focus, &__textarea:focus {
+    border: 1px solid $green;
+    border-radius: 1.2*$size;
+    outline: none;
+  }
+
   &__email {
     margin-right: 0;
   }
