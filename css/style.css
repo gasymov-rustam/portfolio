@@ -1,5 +1,10 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap");
+.container {
+  max-width: 1170px;
+  margin: 0 auto;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -14,7 +19,7 @@
   font: normal 400 18px/22px "Roboto", sans-serif;
 }
 
-.data-contacts, .form-contacts__textarea, .form-contacts__email, .form-contacts__name, .skill-box {
+.data-contacts, .form-contacts__textarea, .form-contacts__name, .form-contacts__email, .skill-box {
   border: 1px solid #C4C4C4;
   border-radius: 5.6px;
 }
@@ -110,6 +115,7 @@
   padding: 8px;
   box-sizing: border-box;
   border-radius: 6px;
+  margin: 16px;
 }
 .skill-box__img {
   margin-bottom: 8px;
@@ -150,11 +156,6 @@
   margin-right: 10.4px;
 }
 
-.container {
-  width: 1170px;
-  margin: 0 auto;
-}
-
 .general-header {
   background: #444444;
   margin: 0 0 56px 0;
@@ -164,15 +165,6 @@
   display: flex;
   justify-content: flex-end;
   padding: 8px 16px;
-  /*&__pic-label:checked .about__title{
-    color: red;
-    font-size: 55px;
-  }
-
-  &__pic-menu:checked .about__title{
-    color: red;
-    font-size: 55px;
-  }*/
 }
 .wrapper-head__menu {
   display: flex;
@@ -189,15 +181,13 @@
 .wrapper-head__link:hover {
   color: #009688;
 }
-.wrapper-head__label {
-  order: 1;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 18px;
-  height: 12px;
-  margin: 14px 0 14px 0;
+.wrapper-head__pic-menu {
+  display: none;
 }
+.wrapper-head__pic-label {
+  display: none;
+}
+
 .about {
   display: flex;
   align-items: center;
@@ -245,7 +235,7 @@
   flex-direction: column;
   align-items: center;
   padding: 0 16px;
-  margin: 56px 0;
+  margin: 16px 0;
 }
 
 .skill-work__progress_longest {
@@ -262,16 +252,15 @@
 
 .wrapper_works {
   margin: 0 0 56px 0;
+  padding-top: 32px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 32px 16px;
 }
 
 .skills {
   display: flex;
-  gap: 32px;
   flex-wrap: wrap;
 }
 
@@ -279,7 +268,6 @@
   display: flex;
   align-items: flex-start;
   padding: 0;
-  gap: 32px;
   margin: 0 0 56px 0;
 }
 
@@ -289,15 +277,14 @@
   flex-direction: column;
   align-items: flex-start;
   padding: 0;
-  gap: 32px;
+  margin-right: 32px;
 }
 .form-contacts__inputs {
   display: flex;
   align-items: flex-start;
   padding: 0;
-  gap: 32px;
 }
-.form-contacts__name {
+.form-contacts__name, .form-contacts__email {
   width: 50%;
   font-size: 20px;
   line-height: 28px;
@@ -305,19 +292,16 @@
   align-items: center;
   color: rgba(0, 0, 0, 0.5);
   padding: 8px 16px;
+  margin-right: 32px;
+  margin-bottom: 32px;
 }
 .form-contacts__email {
-  width: 50%;
-  font-size: 20px;
-  line-height: 28px;
-  display: flex;
-  align-items: center;
-  color: rgba(0, 0, 0, 0.5);
-  padding: 8px 16px;
+  margin-right: 0;
 }
 .form-contacts__textarea {
   width: 100%;
   resize: none;
+  margin-bottom: 32px;
 }
 .form-contacts_btn {
   width: 100%;
@@ -329,10 +313,9 @@
   flex-direction: column;
   align-items: flex-start;
   padding: 16px;
-  gap: 18.5px;
 }
 .data-contacts__item {
-  padding: 2.5px 0;
+  margin: 10px 0;
 }
 
 .general-footer {
@@ -346,6 +329,7 @@
   line-height: 21px;
   color: #FFFFFF;
 }
+
 .footer-title__link {
   text-decoration: none;
   color: #009688;

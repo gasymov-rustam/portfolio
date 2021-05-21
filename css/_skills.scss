@@ -1,0 +1,15 @@
+.wrapper-skills {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0 4*$size;
+  margin: 4*$size 0;
+}
+
+.skill-work__progress_longest {
+  background: linear-gradient(90deg, #009688 0%, rgba(0, 150, 136, 0) 88.54%);
+}
+
+.skill-work__progress_shortest {
+  background: linear-gradient(90deg, #009688 0%, rgba(0, 150, 136, 0) 28.29%);
+}

@@ -1,0 +1,36 @@
+.general-header {
+  background: $dark;
+  margin: 0 0 14*$size 0;
+}
+
+.wrapper-head {
+  display: flex;
+  justify-content: flex-end;
+  padding: 2*$size 4*$size;
+
+  &__menu {
+    display: flex;
+    align-items: center;
+  }
+
+  &__link {
+    font-weight: 500;
+    font-size: 8*$size;
+    line-height: 37px;
+    color: $white;
+    margin: 0 8*$size;
+    text-decoration: none;
+  }
+
+  &__link:hover {
+    color: $green;
+  }
+
+  &__pic-menu {
+    display: none;
+  }
+
+  &__pic-label {
+    display: none;
+  }
+}

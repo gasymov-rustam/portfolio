@@ -1,0 +1,46 @@
+.about {
+  display: flex;
+  align-items: center;
+  padding: 0 4*$size;
+  margin: 0 0 14*$size 0;
+
+  &__img {
+    width: 260px;
+    height: 260px;
+    overflow: hidden;
+    flex-shrink: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    img {
+      width: 100%;
+      height: auto;
+    }
+  }
+
+  &__main-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 0;
+    margin: 0 0 0 8*$size;
+  }
+
+  &__title {
+    font-weight: bold;
+    font-size: 9*$size;
+    line-height: 42px;
+    color: $dark;
+    margin-bottom: 4*$size;
+  }
+
+  &__description {
+    font-size: 4.5*$size;
+    line-height: 21px;
+    color: $dark;
+    flex-grow: 0;
+    margin-bottom: 4*$size;
+  }
+}

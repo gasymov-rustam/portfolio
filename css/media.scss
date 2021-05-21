@@ -16,60 +16,6 @@
     margin: 0 0 14*$size 0;
   }
 
-  .wrapper-head {
-    display: flex;
-    flex-direction: column;
-    padding: 2*$size 4*$size;
-
-    &__menu {
-      display: flex;
-      align-items: center;
-      flex-direction: column;
-      order: 1;
-    }
-
-    &__link {
-      font-weight: 500;
-      font-size: 8*$size;
-      line-height: 37px;
-      color: $white;
-      margin: 0 8*$size;
-      text-decoration: none;
-      display: none;
-    }
-
-    &__link:hover {
-      color: $green;
-    }
-
-    &__label {
-      width: 100%;
-      display: flex;
-      justify-content: flex-end;
-      color: $white;
-    }
-
-    &__pic-menu {
-      display: none;
-      order: 1;
-    }
-
-    &__pic-label {
-      margin: 14px 0 22px 0;
-      width: 18px;
-      height: 12px;
-      order: 1;
-    }
-
-    &__pic-label:checked {
-      color: red;
-    }
-
-    &__pic-menu:checked {
-      color: red;
-    }
-  }
-
   //----------------------------------------------------------
 
   .about {
@@ -148,60 +94,6 @@
     margin: 0 0 14*$size 0;
   }
 
-  .wrapper-head {
-    display: flex;
-    flex-direction: column;
-    padding: 2*$size 4*$size;
-
-    &__menu {
-      display: flex;
-      align-items: center;
-      flex-direction: column;
-      order: 1;
-    }
-
-    &__link {
-      font-weight: 500;
-      font-size: 8*$size;
-      line-height: 37px;
-      color: $white;
-      margin: 0 8*$size;
-      text-decoration: none;
-      display: none;
-    }
-
-    &__link:hover {
-      color: $green;
-    }
-
-    &__label {
-      width: 100%;
-      display: flex;
-      justify-content: flex-end;
-      color: $white;
-    }
-
-    &__pic-menu {
-      display: none;
-      order: 1;
-    }
-
-    &__pic-label {
-      margin: 14px 0 22px 0;
-      width: 18px;
-      height: 12px;
-      order: 1;
-    }
-
-    &__pic-label:checked {
-      color: red;
-    }
-
-    &__pic-menu:checked {
-      color: red;
-    }
-  }
-
   //----------------------------------------------------------
 
   .about {
@@ -271,6 +163,7 @@
 
   .form-contacts {
     width: 100%;
+    margin-right: 0;
 
     &__inputs {
       width: 100%;
@@ -279,11 +172,17 @@
 
     &__name {
       width: 100%;
+      margin-right: 0;
     }
 
     &__email {
       width: 100%;
     }
+
+    &_btn {
+      margin-bottom: 32px;
+    }
+
 
   }
 
@@ -308,57 +207,55 @@
   }
 
   .wrapper-head {
-    display: flex;
-    flex-direction: column;
-    padding: 2*$size 4*$size;
+    position: relative;
+    text-align: center;
+    height: 62px;
+
+    &__pic-label {
+      width: 18px;
+      height: 18px;
+      display: block;
+      position: absolute;
+      top: 0;
+      right: 0;
+      cursor: pointer;
+      z-index: 900;
+      color: #FFFFFF;
+      margin: 22px 2*$size;
+    }
 
     &__menu {
-      display: flex;
-      align-items: center;
-      flex-direction: column;
-      order: 1;
+      display: block;
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      transform: translateY(100%);
+
+      max-height: 0;
+      font-size: 0;
+      overflow: hidden;
+      transition: .5s;
     }
 
     &__link {
-      font-weight: 500;
-      font-size: 8*$size;
-      line-height: 37px;
-      color: $white;
-      margin: 0 8*$size;
-      text-decoration: none;
-      display: none;
-    }
-
-    &__link:hover {
-      color: $green;
-    }
-
-    &__label {
       width: 100%;
-      display: flex;
-      justify-content: flex-end;
-      color: $white;
+      display: block;
+      background: $dark;
+      padding: 10px;
+      border-top: 1px solid grey;
+      margin: 0 0;
+      font-size: 20px;
     }
+  }
 
-    &__pic-menu {
-      display: none;
-      order: 1;
-    }
+  #check-menu {
+    display: none;
+  }
 
-    &__pic-label {
-      margin: 14px 0 22px 0;
-      width: 18px;
-      height: 12px;
-      order: 1;
-    }
-
-    &__pic-label:checked {
-      color: red;
-    }
-
-    &__pic-menu:checked {
-      color: red;
-    }
+  #check-menu:checked ~ .wrapper-head__menu {
+    max-height: 500px;
+    font-size: 16px;
   }
 
   //----------------------------------------------------------
@@ -445,6 +342,7 @@
 
   .form-contacts {
     width: 100%;
+    margin-right: 0;
 
     &__inputs {
       width: 100%;
@@ -452,12 +350,18 @@
     }
 
     &__name {
+      margin-right: 0;
       width: 100%;
     }
 
     &__email {
       width: 100%;
     }
+
+    &_btn {
+      margin-bottom: 32px;
+    }
+
 
   }
 
@@ -482,57 +386,55 @@
   }
 
   .wrapper-head {
-    display: flex;
-    flex-direction: column;
-    padding: 2*$size 4*$size;
+    position: relative;
+    text-align: center;
+    height: 62px;
+
+    &__pic-label {
+      width: 18px;
+      height: 18px;
+      display: block;
+      position: absolute;
+      top: 0;
+      right: 0;
+      cursor: pointer;
+      z-index: 900;
+      color: #FFFFFF;
+      margin: 22px 2*$size;
+    }
 
     &__menu {
-      display: flex;
-      align-items: center;
-      flex-direction: column;
-      order: 1;
+      display: block;
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      transform: translateY(100%);
+
+      max-height: 0;
+      font-size: 0;
+      overflow: hidden;
+      transition: .5s;
     }
 
     &__link {
-      font-weight: 500;
-      font-size: 8*$size;
-      line-height: 37px;
-      color: $white;
-      margin: 0 8*$size;
-      text-decoration: none;
-      display: none;
-    }
-
-    &__link:hover {
-      color: $green;
-    }
-
-    &__label {
       width: 100%;
-      display: flex;
-      justify-content: flex-end;
-      color: $white;
+      display: block;
+      background: $dark;
+      padding: 10px;
+      border-top: 1px solid grey;
+      margin: 0 0;
+      font-size: 20px;
     }
+  }
 
-    &__pic-menu {
-      display: none;
-      order: 1;
-    }
+  #check-menu {
+    display: none;
+  }
 
-    &__pic-label {
-      margin: 14px 0 22px 0;
-      width: 18px;
-      height: 12px;
-      order: 1;
-    }
-
-    &__pic-label:checked {
-      color: red;
-    }
-
-    &__pic-menu:checked {
-      color: red;
-    }
+  #check-menu:checked ~ .wrapper-head__menu {
+    max-height: 500px;
+    font-size: 16px;
   }
 
   //----------------------------------------------------------
@@ -610,7 +512,7 @@
       width: 100%;
     }
   }
-//----------------------------------------
+  //----------------------------------------
 
   .wrapper-contacts {
     flex-wrap: wrap;
@@ -619,6 +521,7 @@
 
   .form-contacts {
     width: 100%;
+    margin-right: 0;
 
     &__inputs {
       flex-wrap: wrap;
@@ -630,6 +533,10 @@
 
     &__email {
       width: 100%;
+    }
+
+    &_btn {
+      margin-bottom: 32px;
     }
 
   }
