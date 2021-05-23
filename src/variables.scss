@@ -6,11 +6,16 @@
   font: normal 400 18px/22px 'Roboto', sans-serif;
 }
 
-
 $size:4px;
 $dark:#444444;
 $green:#009688;
 $grey:#505050;
 $white:#FFFFFF;
 $color-bord: #C4C4C4;
+
+%border {
+  border: 1px solid $color-bord;
+  border-radius: 1.5*$size;
+}
+
 
